@@ -58,6 +58,8 @@ class Kame
     @state[:line_colour] = new_colour
   end
 
+  alias_method :color, :colour
+
   def forward(distance)
     theta = @state[:rotation].degrees_to_radians
     x = @state[:x] + distance * Math::cos(theta)
