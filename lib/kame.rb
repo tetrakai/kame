@@ -81,6 +81,18 @@ class Kame
     self.forward(-distance)
   end
 
+  def show_tip
+    turn_left(90)
+    forward(4)
+    turn_right(120)
+    forward(8)
+    turn_right(120)
+    forward(8)
+    turn_right(120)
+    forward(4)
+    turn_right(90)
+  end
+
   def method_missing(method_name, *args)
     puts "Sorry, but I don't know what '#{method_name}' means?"
   end
