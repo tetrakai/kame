@@ -5,10 +5,10 @@ class Kame
   def initialize(options = {}, &block)
     @lines = []
     @state = {
-      :pen_down => false,
-      :x => 0,
-      :y => 0,
-      :rotation => 0,
+      :pen_down => true,
+      :x => 320,
+      :y => 240,
+      :rotation => -90,
       :line_colour => KameColours::lookup[:black]
     }
 
